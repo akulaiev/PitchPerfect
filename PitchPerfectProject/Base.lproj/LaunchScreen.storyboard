@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="EHf-IW-A2E">
+            <objects>
+                <viewController id="01J-lp-oVM" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6Vm-FY-OjF" userLabel="Top View">
+                                <rect key="frame" x="0.0" y="36" width="375" height="333.5"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="WELCOME" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Rj9-jh-oYg">
+                                        <rect key="frame" x="109.5" y="147.5" width="156" height="39"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="33"/>
+                                        <color key="textColor" red="0.1333333333" green="0.28235294119999998" blue="0.43529411759999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="to the Pitch Perfect" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UQc-Wc-kBj">
+                                        <rect key="frame" x="93" y="197.5" width="189.5" height="28.5"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="24"/>
+                                        <color key="textColor" red="0.1333333333" green="0.28235294119999998" blue="0.43529411759999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="Rj9-jh-oYg" firstAttribute="centerY" secondItem="6Vm-FY-OjF" secondAttribute="centerY" id="OMI-wc-xRc"/>
+                                    <constraint firstItem="UQc-Wc-kBj" firstAttribute="centerY" secondItem="6Vm-FY-OjF" secondAttribute="centerY" constant="45" id="VIs-a6-QKx"/>
+                                    <constraint firstItem="Rj9-jh-oYg" firstAttribute="centerX" secondItem="6Vm-FY-OjF" secondAttribute="centerX" id="Y5o-o1-Fhg"/>
+                                    <constraint firstItem="UQc-Wc-kBj" firstAttribute="centerX" secondItem="6Vm-FY-OjF" secondAttribute="centerX" id="pZF-9p-IEL"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wNg-hZ-JrD" userLabel="Bot View">
+                                <rect key="frame" x="0.0" y="333.5" width="375" height="333.5"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Udacity_logo" translatesAutoresizingMaskIntoConstraints="NO" id="jp3-Kf-MGT">
+                                        <rect key="frame" x="67.5" y="103" width="240" height="128"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="128" id="Gaz-HM-RCL"/>
+                                            <constraint firstAttribute="width" constant="240" id="be1-dJ-Pf1"/>
+                                        </constraints>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="student project" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="r44-eW-hr0">
+                                        <rect key="frame" x="113.5" y="227.5" width="148" height="29"/>
+                                        <fontDescription key="fontDescription" type="system" weight="thin" pointSize="24"/>
+                                        <color key="textColor" red="0.1333333333" green="0.28235294119999998" blue="0.43529411759999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="jp3-Kf-MGT" firstAttribute="centerX" secondItem="wNg-hZ-JrD" secondAttribute="centerX" id="DTp-Oo-lMD"/>
+                                    <constraint firstItem="r44-eW-hr0" firstAttribute="centerY" secondItem="wNg-hZ-JrD" secondAttribute="centerY" constant="75" id="Wap-CM-6xG"/>
+                                    <constraint firstItem="r44-eW-hr0" firstAttribute="centerX" secondItem="wNg-hZ-JrD" secondAttribute="centerX" id="dqI-YU-pe3"/>
+                                    <constraint firstItem="jp3-Kf-MGT" firstAttribute="centerY" secondItem="wNg-hZ-JrD" secondAttribute="centerY" id="pjS-Mq-hIw"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="wNg-hZ-JrD" firstAttribute="height" secondItem="Ze5-6b-2t3" secondAttribute="height" multiplier="1:2" id="NBE-PZ-4CM"/>
+                            <constraint firstItem="6Vm-FY-OjF" firstAttribute="height" secondItem="Ze5-6b-2t3" secondAttribute="height" multiplier="1:2" id="Yxw-LX-wjG"/>
+                            <constraint firstItem="6Vm-FY-OjF" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="axc-PO-AX1"/>
+                            <constraint firstItem="wNg-hZ-JrD" firstAttribute="width" secondItem="Ze5-6b-2t3" secondAttribute="width" id="css-Y6-nfJ"/>
+                            <constraint firstItem="6Vm-FY-OjF" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="16" id="dRC-hu-xWZ"/>
+                            <constraint firstItem="wNg-hZ-JrD" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="h4t-qO-j3B"/>
+                            <constraint firstItem="wNg-hZ-JrD" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="jWy-5r-nnb"/>
+                            <constraint firstItem="6Vm-FY-OjF" firstAttribute="width" secondItem="Ze5-6b-2t3" secondAttribute="width" id="uQF-Za-4aO"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="52" y="374.66266866566718"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Udacity_logo" width="800" height="420"/>
+    </resources>
+</document>
